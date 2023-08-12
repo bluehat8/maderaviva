@@ -65,7 +65,7 @@
     }
     .header p {
       font-size: 18px;
-      color: #777;
+      color: #b3b3b3;
       max-width: 600px;
       margin: 0 auto;
     }
@@ -120,12 +120,17 @@
   background-color: rgb(42, 41, 41);
 }
 
+.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: brightness(40%);
+  }
+
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Fabricación de Madera</a>
+      <a class="navbar-brand" href="#">Madera Viva</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -189,26 +194,63 @@
     </div>
   </div>
 
-  <div class="section" id="procesos">
+
+  <div class="section" id="productos">
+    <div class="container">
+      <h2 class="section-title">Nuestros Productos</h2>
+      <div id="carouselExampleControls" class="carousel slide mb-3" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center">
+              <img class="d-block mx-auto" src="img/tapiceria.jpg" alt="Acabado Barnizado" style="max-width: 500px; max-height: 300px;">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <img class="d-block mx-auto" src="img/metal.jpg" alt="Acabado Lacado" style="max-width: 100%; max-height: 300px;">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <img class="d-block mx-auto" src="img/dxxi-reche-mora-balbina-web.jpg" alt="Acabado Aserrado" style="max-width: 500px; max-height: 300px;">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <p class="section-content m">Visita nuestra galería para ver nuestros productos con diversos acabados como barnizado, lacado y aserrado.</p>
+    </div>
+  </div>
+    
+
+
+  <div class="section bg-light" id="procesos">
     <div class="container">
       <h2 class="section-title">Procesos Detallados</h2>
       <p class="section-content">Cada producto pasa por procesos precisos de diseño, corte, ensamblado y acabado para garantizar calidad y detalle en cada pieza.</p>
     </div>
   </div>
 
-  <div class="section bg-light" id="sistema">
+  <div class="section" id="sistema">
     <div class="container">
       <h2 class="section-title">Sistema de Producción Eficiente</h2>
       <p class="section-content">Nuestro sistema de producción por lotes nos permite crear productos personalizados y de alta calidad, ajustando la producción según la demanda.</p>
     </div>
   </div>
 
-  <div class="section" id="quienes-somos">
+  <!-- <div class="section" id="quienes-somos">
     <div class="container">
       <h2 class="section-title">Quiénes Somos</h2>
       <p class="section-content">Bienvenidos a nuestra página web dedicada a la fabricación de muebles, sillas, mesas y otros productos a base de madera. Aquí encontrarás información detallada sobre los materiales utilizados, los procesos de manufactura involucrados y el sistema de producción por lotes que empleamos para ofrecer productos de alta calidad y satisfacer las necesidades de nuestros clientes.</p>
     </div>
-  </div>
+  </div> -->
 
   <div class="footer">
     <div class="container">
