@@ -7,130 +7,30 @@
   <!-- Agregar enlaces a los archivos CSS de Bootstrap y FontAwesome -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+
   <style>
-    /* Estilos personalizados */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #eae2d7;
-      color: #3c2f27;
-    }
-    
-    .navbar-brand {
-      font-weight: bold;
-      color: #fff;
-    }
-    .navbar-toggler-icon {
-      color: #fff;
-    }
-    .nav-link {
-      color: #fff;
-    }
-    /* .header {
-        text-align: center;
-        padding: 200px 0;
-        background-image: url('img/background.jpg'); 
-        background-size: cover;
-  background-position: center;
-    } */
+  
 
-    .header {
-  position: relative;
-  background-image: url('img/background.jpg'); /* Reemplaza "nombre-de-tu-imagen.jpg" con el nombre y extensión de tu imagen */
-  background-size: cover;
-  background-position: center;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Ajusta el último valor (0.6) para cambiar la opacidad */
-}
-
-.header-content {
-  text-align: center;
-  color: #fff; /* Cambia el color del texto si es necesario */
-  padding: 250px 0;
-  position: relative;
-  z-index: 1;
-}
-    .header h1 {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #ffff;
-    }
-    .header p {
-      font-size: 18px;
-      color: #b3b3b3;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .section {
-      padding: 80px 0;
-      text-align: center;
-    }
-    .section-title {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 40px;
-      color: #5e493a;
-    }
-    .section-content {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #5e493a;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .feature-icon {
-      font-size: 40px;
-      color: #5e493a;
-      margin-bottom: 20px;
-    }
-    .footer {
-      background-color: #3c2f27;
-      color: #fff;
-      padding: 40px 0;
-    }
-    .footer p {
-      font-size: 16px;
-      text-align: center;
-      margin-bottom: 0;
-    }
-
-    .navbar {
-        z-index: 999999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.navbar.transparent {
-  background-color: transparent;
-}
-
-.navbar.scrolled {
-  background-color: rgb(42, 41, 41);
-}
-
-.carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    filter: brightness(40%);
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
   }
 
+  .icon {
+    font-size: 40px;
+    color: #5e493a;
+    margin-bottom: 15px;
+  }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Madera Viva</a>
+      <a class="navbar-brand" href="#">Carpintería Offir</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -148,6 +48,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -155,22 +58,32 @@
 
   <div class="header">
     <div class="header-content">
-      <h1>Fabricación de Productos a Base de Madera</h1>
-      <p>Calidad y Estilo en Cada Pieza</p>
+      <h1>Carpintería Offir</h1>
+      <p>Fabricación de productos a base de madera</p>
+      <a href="contacto.html" class="btn btn-outline-primary btn-lg mt-3 btn-hover-cafe btn-cafe-bordes-blancos">Contáctanos</a>
     </div>
   </div>
 
-
   <div class="section" id="quienes-somos">
-    <div class="container">
-      <h2 class="section-title">Quiénes Somos</h2>
-      <p class="section-content">Bienvenidos a nuestra página web dedicada a la fabricación de muebles, sillas, mesas y otros productos a base de madera. Aquí encontrarás información detallada sobre los materiales utilizados, los procesos de manufactura involucrados y el sistema de producción por lotes que empleamos para ofrecer productos de alta calidad y satisfacer las necesidades de nuestros clientes.</p>
+    <div class="container mt-5"> <!-- Agregamos la clase "mt-5" para aumentar el margen top -->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/free-photo-of-madera-mesa-de-madera-silla.jpeg" alt="Imagen de la empresa" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title">Quiénes Somos</h2>
+          <p class="section-content text-left">
+            Somos una empresa dedicada a la fabricación de muebles, sillas, mesas y otros productos de madera. 
+            Aquí encontrarás información detallada sobre los materiales que utilizamos y los procesos de fabricación involucrados.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="section bg-light" id="materiales">
     <div class="container">
-      <h2 class="section-title">Materiales de Calidad</h2>
+      <h2 class="section-title">Materiales utilizados</h2>
       <div class="row">
         <div class="col-md-4">
           <i class="fas fa-tree feature-icon"></i>
@@ -194,54 +107,128 @@
     </div>
   </div>
 
-
-  <div class="section" id="productos">
+  <div class="section" id="procesos">
     <div class="container">
-      <h2 class="section-title">Nuestros Productos</h2>
-      <div id="carouselExampleControls" class="carousel slide mb-3" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="d-block mx-auto" src="img/tapiceria.jpg" alt="Acabado Barnizado" style="max-width: 500px; max-height: 300px;">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="d-block mx-auto" src="img/metal.jpg" alt="Acabado Lacado" style="max-width: 100%; max-height: 300px;">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="d-block mx-auto" src="img/dxxi-reche-mora-balbina-web.jpg" alt="Acabado Aserrado" style="max-width: 500px; max-height: 300px;">
+      <h2 class="section-title">Procesos de Manufactura</h2>
+      <p class="section-content mb-5">
+        Nuestros productos a base de madera se crean a través de diversos procesos de manufactura que garantizan la calidad y el detalle en cada pieza:
+      </p>
+  
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <div class="proceso">
+            <div>
+              <h3>Diseño y Planificación</h3>
+              <p>
+                Antes de iniciar la producción, diseñamos y planificamos cada producto. Creación de bocetos, planos y especificaciones técnicas son fundamentales en esta etapa.
+              </p>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="col-md-6">
+          <div class="proceso">
+            <div>
+              <h3>Selección de Materiales</h3>
+              <p>
+                Elegimos cuidadosamente los tipos de madera y otros materiales adecuados para cada producto, considerando su apariencia y funcionalidad.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="section-content m">Visita nuestra galería para ver nuestros productos con diversos acabados como barnizado, lacado y aserrado.</p>
+  
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <div class="proceso">
+            <div>
+              <h3>Corte y Desbaste</h3>
+              <p>
+                Utilizamos técnicas precisas de corte, como sierras, routers y máquinas CNC, para dar forma a las piezas de acuerdo con los diseños.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="proceso">
+            <div>
+              <h3>Ensamblado</h3>
+              <p>
+                Ensamblamos las piezas de madera utilizando métodos como clavos, tornillos, ensambles de espiga o encolado, asegurando la estabilidad y resistencia de cada producto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="proceso">
+            <div>
+              <h3>Acabado</h3>
+              <p>
+                Aplicamos técnicas de acabado, como lijado, teñido, lacado o pintura, para realzar la apariencia y proteger la madera.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-    
 
-
-  <div class="section bg-light" id="procesos">
-    <div class="container">
-      <h2 class="section-title">Procesos Detallados</h2>
-      <p class="section-content">Cada producto pasa por procesos precisos de diseño, corte, ensamblado y acabado para garantizar calidad y detalle en cada pieza.</p>
-    </div>
-  </div>
-
-  <div class="section" id="sistema">
+  <div class="section bg-light" id="sistema">
     <div class="container">
       <h2 class="section-title">Sistema de Producción Eficiente</h2>
-      <p class="section-content">Nuestro sistema de producción por lotes nos permite crear productos personalizados y de alta calidad, ajustando la producción según la demanda.</p>
+      <div class="section-content">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="icon-content">
+            <h3>Personalización</h3>
+            <p>Cada pieza de mobiliario o trabajo en carpintería se crea de acuerdo con las necesidades y preferencias del cliente. Esto puede incluir medidas específicas, diseños únicos y materiales preferidos.</p>
+          </div>
+        </div>
+  
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div class="icon-content">
+            <h3>Flexibilidad</h3>
+            <p>El proceso de producción se adapta a cada proyecto individual, lo que permite cambios en el diseño o especificaciones según lo solicitado por el cliente.</p>
+          </div>
+        </div>
+        
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="icon-content">
+            <h3>Enfoque en la calidad</h3>
+            <p>Debido a la atención individualizada a cada proyecto, hay un mayor énfasis en la calidad y los detalles, ya que cada producto se revisa minuciosamente antes de ser entregado al cliente.</p>
+          </div>
+        </div>
+  
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="icon-content">
+            <h3>Mayor tiempo de fabricación</h3>
+            <p>Dado que cada trabajo es único, el tiempo de producción puede ser más largo en comparación con otros sistemas de producción más estandarizados.</p>
+          </div>
+        </div>
+  
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-hammer"></i>
+          </div>
+          <div class="icon-content">
+            <h3>Habilidades artesanales</h3>
+            <p>En la carpintería, este enfoque tiende a destacar las habilidades artesanales y la destreza del carpintero, ya que se requiere una mayor adaptación y trabajo manual en cada proyecto.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -252,7 +239,7 @@
     </div>
   </div> -->
 
-  <div class="section bg-light" id="contexto">
+  <div class="section" id="contexto">
     <div class="container">
       <h2 class="section-title">Contexto Historico del Producto</h2>
       <p class="section-content">Durante la época colonial en Nicaragua, los bosques eran una fuente importante de recursos naturales para la construcción, la fabricación de barcos y otros usos. Sin embargo, en esta época, la explotación forestal no estaba tan desarrollada como en épocas posteriores.</p>
@@ -260,18 +247,29 @@
     </div>
   </div>
 
-  <div class="section" id="Exportancias">
+  <div class="section bg-light" id="Exportancias">
     <div class="container">
       <h2 class="section-title">Países a los que se exporta el producto</h2>
-      <p class="section-content">La exportación de madera es una parte significativa de la economía nicaragüense, contribuyendo a los ingresos del país ya la generación de empleo en áreas rurales. La madera se utiliza para la fabricación de muebles, pisos, construcción y otros productos fabricados, lo que la convierte en una mercancía valiosa en el comercio internacional.</p>
+      <p class="section-content">La exportación de madera es una parte significativa de la economía nicaragüense, 
+        contribuyendo a los ingresos del país ya la generación de empleo en áreas rurales. La madera se utiliza para la
+         fabricación de muebles, pisos, construcción y otros productos fabricados, lo que la convierte en una mercancía valiosa
+          en el comercio internacional.
+
+          Algunos de los principales destinos de exportación de productos de madera de 
+          Nicaragua son los Estados Unidos, México, China, Taiwán, Honduras y Costa Rica. 
+          Estos países importan madera y productos de madera nicaragüenses para satisfacer la 
+          demanda de sus propias industrias y mercados internos.
+        
+        </p>
+    
     </div>
   </div>
 
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
-      <p>&copy; 2023 Fabricación de Madera. Todos los derechos reservados.</p>
+      <p>&copy; 2023 Carpintería Offir. Todos los derechos reservados.</p>
     </div>
-  </div>
+  </footer>
 
   <!-- Agregar scripts de Bootstrap y cualquier otro script necesario aquí -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

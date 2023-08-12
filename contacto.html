@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Carpintería Offir</title>
+  <!-- Agregar enlaces a los archivos CSS de Bootstrap y FontAwesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Carpintería Offir</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Materiales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Procesos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Sistema de Producción</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Quiénes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Encabezado con fondo -->
+  <div class="header">
+    <div class="header-content">
+      <h1>Carpintería Offir</h1>
+      <p>Fabricación de productos a base de madera</p>
+      <a href="contacto.html" class="btn btn-outline-primary btn-lg mt-3 btn-hover-cafe btn-cafe-bordes-blancos">Contáctanos</a>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="section bg-light" id="contacto">
+    <div class="container">
+      <h2 class="section-title">Contáctanos</h2>
+      <p class="section-content">¿Tienes preguntas o comentarios? ¡Contáctanos y te responderemos lo antes posible!</p>
+      
+      <!-- Formulario de contacto -->
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="tu_archivo_de_procesamiento.php" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo Electrónico</label>
+              <input type="email" id="correo" name="correo" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Carpintería Offir. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Agregar scripts de Bootstrap y cualquier otro script necesario aquí -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // ... (mantén el script original)
+  </script>
+</body>
+
+<script>
+    window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  var scrolled = window.scrollY > 0;
+  navbar.classList.toggle('transparent', !scrolled);
+  navbar.classList.toggle('scrolled', scrolled);
+});
+</script>
+</html>
