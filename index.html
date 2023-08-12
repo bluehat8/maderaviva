@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabricación de Productos a Base de Madera</title>
+  <!-- Agregar enlaces a los archivos CSS de Bootstrap y FontAwesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    /* Estilos personalizados */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eae2d7;
+      color: #3c2f27;
+    }
+    
+    .navbar-brand {
+      font-weight: bold;
+      color: #fff;
+    }
+    .navbar-toggler-icon {
+      color: #fff;
+    }
+    .nav-link {
+      color: #fff;
+    }
+    /* .header {
+        text-align: center;
+        padding: 200px 0;
+        background-image: url('img/background.jpg'); 
+        background-size: cover;
+  background-position: center;
+    } */
+
+    .header {
+  position: relative;
+  background-image: url('img/background.jpg'); /* Reemplaza "nombre-de-tu-imagen.jpg" con el nombre y extensión de tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Ajusta el último valor (0.6) para cambiar la opacidad */
+}
+
+.header-content {
+  text-align: center;
+  color: #fff; /* Cambia el color del texto si es necesario */
+  padding: 250px 0;
+  position: relative;
+  z-index: 1;
+}
+    .header h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ffff;
+    }
+    .header p {
+      font-size: 18px;
+      color: #777;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #5e493a;
+    }
+    .section-content {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #5e493a;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .feature-icon {
+      font-size: 40px;
+      color: #5e493a;
+      margin-bottom: 20px;
+    }
+    .footer {
+      background-color: #3c2f27;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer p {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .navbar {
+        z-index: 999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: rgb(42, 41, 41);
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Fabricación de Madera</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#materiales">Materiales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#procesos">Procesos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sistema">Sistema de Producción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div class="header-content">
+      <h1>Fabricación de Productos a Base de Madera</h1>
+      <p>Calidad y Estilo en Cada Pieza</p>
+    </div>
+  </div>
+
+
+  <div class="section" id="quienes-somos">
+    <div class="container">
+      <h2 class="section-title">Quiénes Somos</h2>
+      <p class="section-content">Bienvenidos a nuestra página web dedicada a la fabricación de muebles, sillas, mesas y otros productos a base de madera. Aquí encontrarás información detallada sobre los materiales utilizados, los procesos de manufactura involucrados y el sistema de producción por lotes que empleamos para ofrecer productos de alta calidad y satisfacer las necesidades de nuestros clientes.</p>
+    </div>
+  </div>
+
+  <div class="section bg-light" id="materiales">
+    <div class="container">
+      <h2 class="section-title">Materiales de Calidad</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-tree feature-icon"></i>
+          <h3>Madera Maciza</h3>
+          <p>Utilizamos maderas sólidas de diversas especies para garantizar durabilidad y belleza.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-layer-group feature-icon"></i>
+          <h3>Contrachapado</h3>
+          <p>Empleamos contrachapado para superficies planas y estructuras internas versátiles.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-paint-roller feature-icon"></i>
+          <h3>Medium Density Fiberboard</h3>
+          <p>Este tablero denso y homogéneo se utiliza en paneles, puertas y superficies.
+        </p>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="procesos">
+    <div class="container">
+      <h2 class="section-title">Procesos Detallados</h2>
+      <p class="section-content">Cada producto pasa por procesos precisos de diseño, corte, ensamblado y acabado para garantizar calidad y detalle en cada pieza.</p>
+    </div>
+  </div>
+
+  <div class="section bg-light" id="sistema">
+    <div class="container">
+      <h2 class="section-title">Sistema de Producción Eficiente</h2>
+      <p class="section-content">Nuestro sistema de producción por lotes nos permite crear productos personalizados y de alta calidad, ajustando la producción según la demanda.</p>
+    </div>
+  </div>
+
+  <div class="section" id="quienes-somos">
+    <div class="container">
+      <h2 class="section-title">Quiénes Somos</h2>
+      <p class="section-content">Bienvenidos a nuestra página web dedicada a la fabricación de muebles, sillas, mesas y otros productos a base de madera. Aquí encontrarás información detallada sobre los materiales utilizados, los procesos de manufactura involucrados y el sistema de producción por lotes que empleamos para ofrecer productos de alta calidad y satisfacer las necesidades de nuestros clientes.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <p>&copy; 2023 Fabricación de Madera. Todos los derechos reservados.</p>
+    </div>
+  </div>
+
+  <!-- Agregar scripts de Bootstrap y cualquier otro script necesario aquí -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  var scrolled = window.scrollY > 0;
+  navbar.classList.toggle('transparent', !scrolled);
+  navbar.classList.toggle('scrolled', scrolled);
+});
+</script>
+</body>
+</html>
